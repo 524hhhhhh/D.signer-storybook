@@ -8,7 +8,6 @@
 
 .dropdown-header {
   display: flex;
-  width: 118px;
   align-items: center;
   gap: 4px;
   position: relative;
@@ -21,17 +20,13 @@
 }
 
 .icon-container {
-  position: absolute;
   display: flex;
   width: 14px;
   height: 14px;
-
+  min-width: 14px;
+  min-height: 14px;
   justify-content: center;
   align-items: center;
-
-  flex-shrink: 0;
-  right: 0;
-  top: 50%;
 }
 
 .title {
@@ -49,7 +44,8 @@
 
   flex-direction: column;
   align-items: flex-start;
-  align-self: stretch; /*수직중앙정렬*/
+  align-self: stretch;
+  /*수직중앙정렬*/
 
   border-radius: 12px;
   border: 1px solid var(--btn-stroke-cool-primary, #e5eaf1);
